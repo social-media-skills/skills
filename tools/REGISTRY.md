@@ -15,6 +15,12 @@ doesn't generate or edit media.
 |---|---|---|---|---|
 | WoopSocial | Social publishing/scheduling + post analytics | OAuth + API key | Projects · Social Accounts · Posts (create/list/read/validate/delete, with lifetime post analytics) · Media · Webhooks · Health | `integrations/woopsocial.md` |
 
+## Research & evidence
+
+| Tool | Auth | Capabilities | Guide |
+|---|---|---|---|
+| Jev Social | Existing Chrome session + Jev decision provider | Instagram, TikTok, and LinkedIn search · selected profile/post/comment reads · source-linked reports · explicit partial/gate status | `integrations/jev-social.md` |
+
 ## Image generation & editing
 
 | Tool | Skill | Capabilities | Guide |
