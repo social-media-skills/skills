@@ -14,6 +14,7 @@ doesn't generate or edit media.
 | Tool | Domain | Auth | Capabilities | Guide |
 |---|---|---|---|---|
 | WoopSocial | Social publishing/scheduling + post analytics | OAuth + API key | Projects · Social Accounts · Posts (create/list/read/validate/delete, with lifetime post analytics) · Media · Webhooks · Health | `integrations/woopsocial.md` |
+| BulkPublish | Social publishing/scheduling | See live docs | Batch-oriented review, scheduling, and publishing workflows via API/MCP | `integrations/bulkpublish.md` |
 
 ## Image generation & editing
 
