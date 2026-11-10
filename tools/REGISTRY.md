@@ -55,6 +55,12 @@ doesn't generate or edit media.
 | Clipping + captions (multi-tool) | `captions-and-clipping` | Connection layer across Opus Clip, CapCut, Submagic | `integrations/clipping.md` |
 | Canva | `canva` | Brand-aware design at scale (editor · Sheets · Code · Video 2.0 · Affinity) | `integrations/canva.md` |
 
+## Trend & market data (research inputs)
+
+| Tool | Consumers | Capabilities | Guide |
+|---|---|---|---|
+| GoAnyAPI | `trend-jacking` · `content-research-and-sourcing` · `competitor-analysis` | Trending CapCut/TikTok templates (usage history) · Google Trends · SERP + autocomplete (10 engines) · keyword volume/difficulty · backlinks · traffic · ad transparency | `integrations/goanyapi.md` |
+
 ## Conventions every guide follows
 
 - **Three layers:** `tools/integrations/<name>.md` (connection/API/plan facts) → the tool's
