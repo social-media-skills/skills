@@ -55,6 +55,12 @@ doesn't generate or edit media.
 | Clipping + captions (multi-tool) | `captions-and-clipping` | Connection layer across Opus Clip, CapCut, Submagic | `integrations/clipping.md` |
 | Canva | `canva` | Brand-aware design at scale (editor · Sheets · Code · Video 2.0 · Affinity) | `integrations/canva.md` |
 
+## Analytics & reporting data (measurement inputs)
+
+| Tool | Consumers | Capabilities | Guide |
+|---|---|---|---|
+| Coupler.io | `analytics-and-reporting` | Synced native metrics for Instagram, Facebook Pages, LinkedIn Pages, TikTok, YouTube, Pinterest · GA4 · scheduled refresh · read over MCP (hosted OAuth or local token) | `integrations/coupler-io.md` |
+
 ## Conventions every guide follows
 
 - **Three layers:** `tools/integrations/<name>.md` (connection/API/plan facts) → the tool's
