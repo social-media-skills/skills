@@ -76,13 +76,14 @@ echo "6/8 Plugin manifests (valid JSON, versions in sync)"
 python3 - <<'EOF' || FAIL=1
 import json, sys
 try:
-    p = json.load(open(".claude-plugin/plugin.json"))
-    m = json.load(open(".claude-plugin/marketplace.json"))
+    p = json.load(open(".claude-plugin/plugin.json"))["version"]
+    m = json.load(open(".claude-plugin/marketplace.json"))["plugins"][0]["version"]
+    g = json.load(open("gemini-extension.json"))["version"]
 except Exception as e:
     print(f"  ✗ plugin manifest invalid: {e}"); sys.exit(1)
-if p["version"] != m["plugins"][0]["version"]:
-    print(f"  ✗ version mismatch: plugin.json={p['version']} marketplace.json={m['plugins'][0]['version']}"
-          " — plugin users won't see updates until these match"); sys.exit(1)
+if not (p == m == g):
+    print(f"  ✗ version mismatch: plugin.json={p} marketplace.json={m} gemini-extension.json={g}"
+          " — bump all three (VERSIONS.md) or plugin/extension users won't see updates"); sys.exit(1)
 EOF
 
 echo "7/8 Pack manifest (every pack skill exists; JSON valid)"
