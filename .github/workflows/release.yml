@@ -22,8 +22,9 @@ jobs:
           tag = '$TAG'.lstrip('v')
           p = json.load(open('.claude-plugin/plugin.json'))['version']
           m = json.load(open('.claude-plugin/marketplace.json'))['plugins'][0]['version']
-          if not (tag == p == m):
-              sys.exit(f'Tag v{tag} != plugin.json {p} / marketplace.json {m} — bump the manifests before releasing, or plugin users will never see this update.')
+          g = json.load(open('gemini-extension.json'))['version']
+          if not (tag == p == m == g):
+              sys.exit(f'Tag v{tag} != plugin.json {p} / marketplace.json {m} / gemini-extension.json {g} — bump all three manifests before releasing, or plugin users will never see this update.')
           print(f'versions in sync: {tag}')"
       - name: Validate
         run: ./scripts/validate-skills.sh
